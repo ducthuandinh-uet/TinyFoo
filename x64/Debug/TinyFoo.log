@@ -1,0 +1,11 @@
+﻿  Background.cpp
+  Button.cpp
+  Character.cpp
+  CommonFunc.cpp
+  LTexture.cpp
+  LTime.cpp
+  main.cpp
+  Music.cpp
+  Rock.cpp
+  Generating Code...
+  TinyFoo.vcxproj -> E:\TinyFoo\x64\Debug\TinyFoo.exe
