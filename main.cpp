@@ -156,7 +156,7 @@ void game_play_in_main()
 			if (game_menu.get_screen_status() == PLAY_SCREEN) oChar.handleEvent(e);
 		}
 
-		SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 0xFF);
+		SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 0xFF); // clear screen
 		SDL_RenderClear(gRenderer);
 
 		if (game_menu.get_screen_status() == START_SCREEN)
@@ -180,7 +180,7 @@ void game_play_in_main()
 			if (!delay_time_create_rock.isStarted()) delay_time_create_rock.start();
 			else
 			{
-				if (delay_time_create_rock.getTicks() >= time_delay)
+				if (delay_time_create_rock.getTicks() >= time_delay) // create rock whole map
 				{
 					int pos = rand() % (SCREEN_WIDTH - ROCK_WIDTH);
 					short speed = rand() % 11 + 8;
@@ -197,7 +197,7 @@ void game_play_in_main()
 				}
 			}
 
-			if (!count_3_second.isStarted()) count_3_second.start();
+			if (!count_3_second.isStarted()) count_3_second.start(); // headshot if you still stand over 3s =)))))
 			else
 			{
 				if (count_3_second.getTicks() >= 2000)
