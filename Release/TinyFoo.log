@@ -1,0 +1,15 @@
+﻿  Background.cpp
+  Button.cpp
+  Character.cpp
+  CommonFunc.cpp
+  LTexture.cpp
+  LTime.cpp
+  main.cpp
+E:\TinyFoo\main.cpp(243,23): warning C4018: '<': signed/unsigned mismatch
+  Music.cpp
+  Rock.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 469 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TinyFoo.vcxproj -> E:\TinyFoo\Release\TinyFoo.exe
