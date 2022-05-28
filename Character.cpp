@@ -112,6 +112,10 @@ void CHARACTER::handleEvent(SDL_Event& e)
 void CHARACTER::move()
 {
 	rChar.x += mVelX;
+	if (rChar.x<0 || rChar.x + CHAR_WIDTH > SCREEN_WIDTH)
+	{
+		rChar.x -= mVelX;
+	}
 }
 
 void CHARACTER::render(SDL_Renderer* screen)

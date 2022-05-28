@@ -11,7 +11,7 @@ static LTexture RunTex;
 
 static const int CHAR_WIDTH = 24;
 static const int CHAR_HEIGHT = 48;
-static int CHAR_VEL = 3;
+static int CHAR_VEL = 5;
 
 
 
