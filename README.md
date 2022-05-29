@@ -115,7 +115,7 @@ Game hiển thị tốt nhất với màn hình có tần số quét 60Hz, để
 
 ### **Video mô tả chức năng:** 
 
-Youtube: {@youtube: https://www.youtube.com/watch?v=RCO6bGGDKf8}
+Youtube: [TINY FOO: Lối chơi và một số chức năng của game!!](https://www.youtube.com/watch?v=RCO6bGGDKf8)
 
 
 
