@@ -113,9 +113,9 @@ Game hiển thị tốt nhất với màn hình có tần số quét 60Hz, để
 
 
 
-**Video mô tả chức năng:**
+### **Video mô tả chức năng:** 
 
-
+Youtube: {@youtube: https://www.youtube.com/watch?v=RCO6bGGDKf8}
 
 
 
