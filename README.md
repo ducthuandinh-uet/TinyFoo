@@ -30,7 +30,7 @@
 - **Thư viện đồ hoạ:** SDL 2.0
 - **Game được phát triển bằng IDE Microsoft Visual Studio 2022**
 
-
+![image](https://user-images.githubusercontent.com/67379909/170853227-7f6f9b47-2a21-4ae4-af14-829f8bc6b20b.png)
 
 
 
@@ -58,19 +58,54 @@
 
 * Nhấn : **D** hoặc **MŨI TÊN SANG PHẢI** để chạy sang phải
 
-![tutorial_ground](E:\TinyFoo\Media\BACKGROUND\tutorial_ground.png)
+![tutorial_ground](https://user-images.githubusercontent.com/67379909/170853246-aed89008-3d87-4cf7-9aed-fd27187e14cc.png)
 
 
 
 ### Hướng dẫn tải game:
 
+> Lưu ý: Quá trình tải game được thử nghiệm thành công trên hệ điều hành window. Khuyến nghị sử dụng hệ điều hành window10 để thực hiện
 
+1. Bấm [vào đây](https://github.com/stkey002/TinyFoo/archive/refs/heads/master.zip) để tải trực tiếp dự án
 
-**<u>Lưu ý game hiển thị tốt nhất với màn hình có tần số quét 60Hz, để có trải nghiệm chơi tốt nhất nên thiết đặt tần số quét của màn hình là 60Hz theo hướng dẫn sau:</u>**
+2. Tới thư mục lưu dự án, giải nén file **TinyFoo-master.zip**
+
+3. Sau khi giải nén xong, vào folder TinyFoo-master. Giải nén file **LibSdl2.zip**
+
+4. Đối với hệ điều hành người dùng là:  
+
+   * window 32bit (x86): Giải nén **TinyFoo_x86.zip**, sau đó vào folder Release --> chạy TinyFoo.exe để trải nghiệm ứng dụng
+
+     > Đường Link mô phỏng: C:\Users\Administrator\Downloads\ **TinyFoo-master\Release**
+     >
+     > ![image](https://user-images.githubusercontent.com/67379909/170853667-72464d6d-69f4-44f5-accd-e2a61c5c41b9.png)
+
+   * window 64bit (x64): Giải nén **TinyFoo_x64.zip**, sau đó vào folder x64 --> Release --> TinyFoo.exe để trải nghiệm ứng dụng
+
+     > Đường Link mô phỏng:  C:\Users\Administrator\Downloads\ **TinyFoo-master\x64\Release**
+     >
+     > ![image](https://user-images.githubusercontent.com/67379909/170853742-8e3861eb-6fcb-49d2-b0ac-9c989fc97583.png)
+
+**<u>NOTE</u>** : Nếu xuất hiện thông báo lỗi VCRUNTIME140 và không chạy được TinyFoo.exe, hãy ấn vào đây để tải và cài thêm Microsoft Visual C++ Redistributable. Nguồn https://docs.microsoft.com/vi-VN/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+* Đối với x86: https://aka.ms/vs/17/release/vc_redist.x86.exe
+* Đối với x64: https://aka.ms/vs/17/release/vc_redist.x64.exe
+
+Game hiển thị tốt nhất với màn hình có tần số quét 60Hz, để có trải nghiệm chơi tốt nhất nên thiết đặt tần số quét của màn hình là 60Hz theo hướng dẫn sau:
 
 1. Chọn Start -> Setting hoặc Window + I để mở hộp thoại Setting.
-2.  Tại hộp thoại Setting chọn System -> Display -> Advanced display setting.
+2. Tại hộp thoại Setting chọn System -> Display -> Advanced display setting.
 3. Tại mục Refresh Rate, chọn tần số 60Hz.
+
+<u>**MUỐN XEM PROJECT CỦA DỰ ÁN (Áp dụng cho một số phiên bản Visual Studio)**</u>: Quay trở lại thư mục **TinyFoo-master**. Chọn **TinyFoo.sln** , đấy là nơi quản lí toàn bộ dự án. Muốn chạy Release x64/x86 ở trong Visal Studio thì  **LibSdl2.zip** và **TinyFoo_x64.zip**(tương tự với **TinyFoo_x86.zip**) phải được giải  nén thành công trước.
+
+> ![Untitled](https://user-images.githubusercontent.com/67379909/170854107-6fd99753-089a-4958-baa3-e2e333ef1987.png)
+>
+> Forder TinyFoo-master cần đầy đủ như này để thực hiện được makefile trong Visual Studio.
+
+> ![image](https://user-images.githubusercontent.com/67379909/170854154-a6f915df-3b99-429f-a61a-bec405f93011.png)
+
+
 
 
 
