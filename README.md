@@ -32,8 +32,6 @@
 
 
 
-![image-20220529051053001](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220529051053001.png)
-
 
 
 ​	Tiny Foo là tựa game né vật thể, đòi hỏi sự khéo léo và tập trung cao độ của người chơi.
