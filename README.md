@@ -1,1 +1,292 @@
-TinyFoo
+# <u>GAME PROJECT : TINY FOO</u>
+
+
+
+###### Thông tin sinh viên:
+
+> ​	**Họ và tên:** Đinh Đức Thuận 
+>
+> ​	**MSSV:** 21020795
+>
+> ​	**Lớp thực hành:** INT2215 9
+>
+> ​	K66CD - CN1 - UET. 
+>
+> ​	**github:** stkey002
+>
+> ​	**youtube:** FOO IN DA BAR
+
+***
+
+
+
+## TỔNG QUÁT:
+
+- **Tên game:** TINY FOO
+- **Thể loại:** Khéo léo, hành động, phản xạ
+- **Chế độ:** offline
+- **Đồ hoạ:** 2D
+- **Ngôn ngữ lập trình:** C/C++
+- **Thư viện đồ hoạ:** SDL 2.0
+- **Game được phát triển bằng IDE Microsoft Visual Studio 2022**
+
+
+
+![image-20220529051053001](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220529051053001.png)
+
+
+
+​	Tiny Foo là tựa game né vật thể, đòi hỏi sự khéo léo và tập trung cao độ của người chơi.
+
+​	Hoàn cảnh ra đời: Tiny Foo là một tựa game được phát triển hoàn toàn dựa trên ý tưởng sáng tạo ban đầu của sinh viên lập trình. Nguồn cảm hứng đặt tên game là từ kích thước tí hon của nhân vật game (tiny) và tên đại diện được sử dụng nhiều nhất trong ngành công nghệ: Foo (trong Foobar).
+
+### Luật chơi:
+
+​	Trong Tiny Foo, người chơi sẽ nhập vai vào một nhân vật tí hon có ***<u>DUY NHẤT MỘT SINH MẠNG</u>***. Nhiệm vụ của người chơi là né những viên đá từ trên không trung rơi xuống và phá vỡ kỉ lục tính theo thời gian đã từng tồn tại trước đó. 
+
+##### Ý tưởng kích thích người chơi: 
+
+1. Nhân vật game chỉ có một sinh mạng và không có bất kì hiệu ứng buff, do đó người chơi sẽ phải tập trung nếu muốn phá vỡ kỉ lục.
+
+2. Mặc dù vị trí và tốc độ đá được chọn random nhưng các cấp độ game được thiết lập theo các mốc thời gian. Cụ thể, cứ sau các mốc thời gian, số lượng đá sẽ được tăng lên, người chơi phải di chuyển nhiều hơn.
+
+3. ~~Lập trình viên đã giấu một đoạn code có chức năng tự sinh đá rơi trúng vào vị trí nhân vật sau một khoảng thời gian ngắn => gây khó khăn cho những người chơi phong cách núp hoặc sử dụng "nhân phẩm"....~~
+
+   
+
+### Cách chơi: 
+
+* Nhấn : **A** hoặc **MŨI TÊN SANG TRÁ**I để chạy sang trái
+
+* Nhấn : **D** hoặc **MŨI TÊN SANG PHẢI** để chạy sang phải
+
+![tutorial_ground](E:\TinyFoo\Media\BACKGROUND\tutorial_ground.png)
+
+
+
+### Hướng dẫn tải game:
+
+
+
+**<u>Lưu ý game hiển thị tốt nhất với màn hình có tần số quét 60Hz, để có trải nghiệm chơi tốt nhất nên thiết đặt tần số quét của màn hình là 60Hz theo hướng dẫn sau:</u>**
+
+1. Chọn Start -> Setting hoặc Window + I để mở hộp thoại Setting.
+2.  Tại hộp thoại Setting chọn System -> Display -> Advanced display setting.
+3. Tại mục Refresh Rate, chọn tần số 60Hz.
+
+
+
+## MÔ TẢ CHỨC NĂNG
+
+
+
+**Video mô tả chức năng:**
+
+
+
+
+
+### CƠ CHẾ HOẠT ĐỘNG CỦA GAME: 
+
+* Sử dụng class `CHARACTER`: để quản lí nhân vật game
+
+  * Toạ độ nhân vật
+
+  - Vận tốc nhân vật
+  - Thao tác bàn phím với nhân vật
+  - Sự di chuyển của nhân vật
+
+* Sử dụng class `ROCK`: để quản lí các thuộc tính và phương thức của viên đá
+
+  * Toạ độ sinh vật thể: sử dụng hàm `rand() ` 
+
+    ```C++
+    int pos = rand() % (SCREEN_WIDTH - ROCK_WIDTH);
+    ```
+
+  * Vận tốc của vật thể: sử dụng hàm `rand()` 
+
+    ```C++
+    short speed = rand() % 11 + 8;
+    ```
+
+* Sử dụng hàm `checkCollision()` để bắt va chạm các vật thể:
+
+  ```C++
+  bool checkCollision(SDL_Rect a, SDL_Rect b)
+  {
+  	//The sides of the rectangles
+  	int leftA, leftB;
+  	int rightA, rightB;
+  	int topA, topB;
+  	int bottomA, bottomB;
+  
+  	//Calculate the sides of rect A
+  	leftA = a.x;
+  	rightA = a.x + a.w;
+  	topA = a.y;
+  	bottomA = a.y + a.h;
+  
+  	//Calculate the sides of rect B
+  	leftB = b.x;
+  	rightB = b.x + b.w;
+  	topB = b.y;
+  	bottomB = b.y + b.h;
+  
+  	//If any of the sides from A are outside of B
+  	if (bottomA <= topB) return false;
+  	if (topA >= bottomB) return false;
+  	if (rightA <= leftB) return false;
+  	if (leftA >= rightB) return false;
+      
+  	return true;
+  }
+  ```
+
+  
+
+* **SỰ KIỆN CHUỘT**:  Sử dụng một class `MENU` để quản lí các biến class `BUTTON`.  `Menu` gồm có: 
+
+  * **START_SCREEN**:
+    * PLAY: Bắt đầu vào trò chơi
+    * TUTORIAL: Hướng dẫn nhanh cho người mới chơi
+    * QUIT: Thoát game
+    * RANK (góc dưới phải màn hình): Xem điểm cao nhất từ trước
+    * MUSIC (góc dưới phải màn hình): Bật/ tắt âm nhạc của game
+  * **PLAY_SCREEN**
+    * PAUSE (ở góc phải màn hình): Tạm dừng trò chơi
+    * Hiển thị thời gian (điểm) mà người chơi đạt được
+  * **PAUSE_SCREEN**
+    * CONTINUE: Tiếp tục trò chơi
+    * BACK: Trở về màn hình **START_SCREEN**
+    * MUSIC
+  * **LOSING_SCREEN**
+    * RESTART: Chơi lại game mới
+    * BACK
+    * Hiện số điểm người chơi đạt được
+
+* **<u>Âm thanh: Sử dụng nhạc nền và soud effect khác nhau, thay đổi theo từng SCREEN của Game</u>**
+
+
+
+## KĨ THUẬT LẬP TRÌNH ĐÃ ĐƯỢC SỬ DỤNG
+
+* Chia tách FILE: Code sạch đẹp, dễ quản lí
+
+* Header Guard: Không bị lặp lại khai báo file.h
+
+* Lập trình OOP với Class và các đặc tính như Đóng gói, Kế thừa, Đa hình, Trừu tượng: quản lí đối tượng dễ dàng và sạch đẹp (LTexture quản lí hình ảnh, Character để quản lí nhân vật, LTime để quản lí thời gian,...)
+
+* Cắm cờ Flag : kiểm tra đúng sai trong 1 hàm nhiều điều kiện
+
+* //Comment
+
+* Khai báo, sử dụng, và giải phóng các biến con trỏ
+
+* Sử dụng biến tham chiếu reference không phát sinh bộ nhớ
+
+* Linh hoạt sử dụng hàm bool, biến bool như các công tắc Bật/Tắt
+
+* Sự kiện chuột, bàn phím
+
+* Bắt va chạm giữa các vật thể
+
+* Chạy Sprites của nhân vật theo từng status chuyển động : Đứng im(IDLE), Chạy(RUN)
+
+* Stringstream
+
+* Đọc, ghi file : ghi điểm cao
+
+* Sinh số ngẫu nhiên
+
+* Liệt kê bằng enum
+
+* Sử dụng các hàm trong các thư viện chuẩn của C/C++
+
+* Sử dụng các hàm trong các thư viện đồ hoạ SDL 2.0
+
+
+
+## KẾT LUẬN
+
+* Việc phát triển và hoàn thành dự án game TinyFoo giúp em đạt được nhiều kinh nghiệm về mọi mặt nói chung và kĩ năng trong công nghệ thông tin nói riêng. Rèn luyện cho em tư duy phân bổ công việc, giải quyết các vấn đề một cách nhẫn nại, hợp lí, logic và tuần tự. Nắm thêm được các công đoạn làm game 2D cơ bản giúp em có thể tự mình tạo ứng dụng GUI, bổ trợ kiến thức cho những môn học và công việc sau này.
+
+### Hướng phát triển thêm
+
+* Dự kiến thêm tính năng thay đổi nhân vật trước khi vào game
+
+* Thêm một số loại vật thể rơi, thay đổi kích thước cho đa dạng
+
+* Tạo các động tác nhảy, lướt
+
+* Update một vài tính năng khả thi trong kho tài liệu của LazyFoo
+
+### Những điều tâm đắc:
+
+* Trước khi thực hiện bài tập, những kĩ năng em đã có như lập trình cơ bản, đọc hiểu tiếng anh, sử dụng công cụ tìm kiếm google, photoshop, chuyển đổi âm nhạc, github,... có cơ hội tiếp tục mài giũa và phát triển.
+
+* Trong quá trình làm bài tập, em đã tự mình làm quen và thành thạo được với Microsoft Visual Studio 2022, một IDE mạnh mẽ đối với lập trình viên. Có cơ hội tiếp cận với một số phần mềm đóng gói ứng dụng như Advanced Installer, MVS Installer Project, phần mềm ghi chú code và một số phần mềm hỗ trợ Tile map.
+
+* Em đã nỗ lực tìm kiếm tài nguyên hình ảnh, âm thanh <u>miễn phí trên internet</u> sao vừa phù hợp với hiển thị nhân vật, bối cảnh game, vừa có thể để code xử lí ở phía sau một cách mượt mà.
+
+* Thứ em tâm đắc nhất là trong quá trình phát triển game, em đã phát triển một tựa game bắn nhau đối kháng dựa trên game Gun Mayhem chứ không phải là Tiny Foo. Đây là thời gian mà em học về thêm được kĩ năng Tile map và hầu hết kĩ năng lập trình với thư viện SDL. Nhưng trong thời gian phát triển game, em nhận ra đây quả thực là game khó làm với SDL nên em đã buộc phải rẽ sang phát triển TinyFoo để kịp với tiến độ nộp bài. Điều đó khiến em cảm thấy thực sự tiếc. Em hi vọng rằng trong tương lại em có thể phát triển thành công game đó với SDL thay vì sử dụng Engine như Unity, Unreal,.....
+
+
+
+## LỜI CẢM ƠN
+
+Em xin gửi lời cảm ơn chân thành và sâu sắc nhất tới các thầy giáo phụ trách giảng dạy môn lập trình nâng cao:
+
+* **Thầy Trần Quốc Long**
+
+* **Thầy Nguyễn Việt Anh**
+
+* **Thầy Nguyễn Hoàng Minh Công**
+
+đã hỗ trợ, giúp em hoàn thành bài tập lớn này.
+
+
+
+***Đồng thời cảm ơn tới:***
+
+* [Lazy Foo's Productions](https://lazyfoo.net/)
+
+* [Phát Triển Phần Mềm 123 AZ](https://phattrienphanmem123az.com/)
+* Cộng đồng [321B](https://www.codehub.com.vn/)
+
+* Cộng đồng [StackOverFlow](https://stackoverflow.com/)
+
+***Tài nguyên:***
+
+* https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art
+
+* https://brawlhalla.fandom.com/wiki/Twilight_Grove
+
+* https://www.brawlhalla.com/wallpapers/
+* www.youtube.com
+* www.google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
