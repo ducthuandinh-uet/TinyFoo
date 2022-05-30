@@ -257,12 +257,9 @@ Youtube: [TINY FOO: Lối chơi và một số chức năng của game!!](https:
 ### Những điều tâm đắc:
 
 * Trước khi thực hiện bài tập, những kĩ năng em đã có như lập trình cơ bản, đọc hiểu tiếng anh, sử dụng công cụ tìm kiếm google, photoshop, chuyển đổi âm nhạc, github,... có cơ hội tiếp tục mài giũa và phát triển.
-
 * Trong quá trình làm bài tập, em đã tự mình làm quen và thành thạo được với Microsoft Visual Studio 2022, một IDE mạnh mẽ đối với lập trình viên. Có cơ hội tiếp cận với một số phần mềm đóng gói ứng dụng như Advanced Installer, MVS Installer Project, phần mềm ghi chú code và một số phần mềm hỗ trợ Tile map.
-
 * Em đã nỗ lực tìm kiếm tài nguyên hình ảnh, âm thanh <u>miễn phí trên internet</u> sao vừa phù hợp với hiển thị nhân vật, bối cảnh game, vừa có thể để code xử lí ở phía sau một cách mượt mà.
-
-* Thứ em tâm đắc nhất là trong quá trình phát triển game, em đã phát triển một tựa game bắn nhau đối kháng dựa trên game Gun Mayhem chứ không phải là Tiny Foo. Đây là thời gian mà em học về thêm được kĩ năng Tile map và hầu hết kĩ năng lập trình với thư viện SDL. Nhưng trong thời gian phát triển game, em nhận ra đây quả thực là game khó làm với SDL nên em đã buộc phải rẽ sang phát triển TinyFoo để kịp với tiến độ nộp bài. Điều đó khiến em cảm thấy thực sự tiếc. Em hi vọng rằng trong tương lại em có thể phát triển thành công game đó với SDL thay vì sử dụng Engine như Unity, Unreal,.....
+* Trong khoảng thời gian đầu, việc học lí thuyết và tìm hiểu những câu lệnh mới khiến em mất rất nhiều thời gian. Sau đó là cách trình bày và ứng dụng thuật toán sao cho mọi thứ hợp lí, hiểu quả và không bị lỗi. Việc làm game SDL khiến em rèn luyện được tính tập trung, tính kỉ luật và kiên trì của bản thân trong công việc.
 
 
 
