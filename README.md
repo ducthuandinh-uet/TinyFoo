@@ -21,7 +21,7 @@
 ## MỤC LỤC
 
 1. [TỔNG QUÁT](#TONG-QUAT)
-   * [Luật chơi](###Luật chơi)
+   * [Luật chơi](#Luật chơi)
    * [Cách chơi](#Cach-choi)
    * [Hướng dẫn tải game](#Huong-dan-tai-game)
    
