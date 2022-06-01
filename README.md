@@ -20,16 +20,14 @@
 
 ## MỤC LỤC
 
-1. [TỔNG QUÁT](#TỔNG-QUÁT)
-
-   * [Luật chơi](#Luật chơi)
-   * [Cách chơi](#Cách chơi)
-   * [Hướng dẫn tải game](#Hướng dẫn tải game)
-
-2. [MÔ TẢ CHỨC NĂNG](#Mô tả chức năng)
-
+1. [TỔNG QUÁT](#TONG-QUAT)
+   * [Luật chơi](#Luat-choi)
+   * [Cách chơi](#Cach-choi)
+   * [Hướng dẫn tải game](#Huong-dan-tai-game)
+   
+2. [MÔ TẢ CHỨC NĂNG](#MO-TA-CHUC-NANG)
    * [Video mô tả chức năng](#Video mô tả chức năng)
-
+   
 3. [KĨ THUẬT LẬP TRÌNH ĐÃ ĐƯỢC SỬ DỤNG](#Kĩ thuật lập trình đã được sử dụng)
 
 4. [KẾT LUẬN](#KẾT LUẬN)
