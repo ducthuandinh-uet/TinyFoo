@@ -20,23 +20,22 @@
 
 ## MỤC LỤC
 
-1. [TỔNG QUÁT](#TONG-QUAT)
+1. [TỔNG QUÁT](#TỔNG-QUÁT)
    * [Luật chơi](#Luật-chơi)
-   * [Cách chơi](#Cach-choi)
-   * [Hướng dẫn tải game](#Huong-dan-tai-game)
+   * [Cách chơi](#Cách-chơi)
+   * [Hướng dẫn tải game](#Hướng-dẫn-tải-game)
    
-2. [MÔ TẢ CHỨC NĂNG](#MO-TA-CHUC-NANG)
-   * [Video mô tả chức năng](#Video mô tả chức năng)
+2. [MÔ TẢ CHỨC NĂNG](#MÔ-TẢ-CHỨC-NĂNG)
+   * [Video mô tả chức năng](#Video-mô-tả-chức-năng)
    
-3. [KĨ THUẬT LẬP TRÌNH ĐÃ ĐƯỢC SỬ DỤNG](#Kĩ thuật lập trình đã được sử dụng)
+3. [KĨ THUẬT LẬP TRÌNH ĐÃ ĐƯỢC SỬ DỤNG](#Kĩ-thuật-lập-trình-đã-được-sử-dụng)
 
-4. [KẾT LUẬN](#KẾT LUẬN)
-
-   * [Hướng phát triển](#Hướng phát triển)
-
-   * [Những điều tâm đắc](#Những điều tâm đắc)
-
-5. [LỜI CẢM ƠN](#LỜI CẢM ƠN)
+4. [KẾT LUẬN](#KẾT-LUẬN)
+   * [Hướng phát triển](#Hướng-phát-triển)
+   
+   * [Những điều tâm đắc](#Những-điều-tâm-đắc)
+   
+5. [LỜI CẢM ƠN](#LỜI-CẢM-ƠN)
 
 ## TỔNG QUÁT:
 
