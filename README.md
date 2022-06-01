@@ -27,7 +27,7 @@
    
 2. [MÔ TẢ CHỨC NĂNG](#MÔ-TẢ-CHỨC-NĂNG)
    * [Video mô tả chức năng](#Video-mô-tả-chức-năng)
-   * [Cơ chế hoạt động của game](#CƠ-CHẾ-HOẠT ĐỘNG-CỦA GAME)
+   * [Cơ chế hoạt động của game](#CƠ-CHẾ-HOẠT ĐỘNG-CỦA-GAME)
    
 3. [KĨ THUẬT LẬP TRÌNH ĐÃ ĐƯỢC SỬ DỤNG](#Kĩ-thuật-lập-trình-đã-được-sử-dụng)
 
