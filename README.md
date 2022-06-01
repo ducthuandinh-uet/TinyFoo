@@ -8,7 +8,7 @@
 >
 > ​	**MSSV:** 21020795
 >
-> ​	**Lớp thực hành:** INT2215 9
+> ​	**Lớp thực hành:** INT2215_9
 >
 > ​	K66CD - CN1 - UET. 
 >
@@ -18,7 +18,27 @@
 
 ***
 
+## MỤC LỤC
 
+1. [TỔNG QUÁT](#TỔNG-QUÁT)
+
+   * [Luật chơi](#Luật chơi)
+   * [Cách chơi](#Cách chơi)
+   * [Hướng dẫn tải game](#Hướng dẫn tải game)
+
+2. [MÔ TẢ CHỨC NĂNG](#Mô tả chức năng)
+
+   * [Video mô tả chức năng](#Video mô tả chức năng)
+
+3. [KĨ THUẬT LẬP TRÌNH ĐÃ ĐƯỢC SỬ DỤNG](#Kĩ thuật lập trình đã được sử dụng)
+
+4. [KẾT LUẬN](#KẾT LUẬN)
+
+   * [Hướng phát triển](#Hướng phát triển)
+
+   * [Những điều tâm đắc](#Những điều tâm đắc)
+
+5. [LỜI CẢM ƠN](#LỜI CẢM ƠN)
 
 ## TỔNG QUÁT:
 
@@ -48,7 +68,7 @@
 
 2. Mặc dù vị trí và tốc độ đá được chọn random nhưng các cấp độ game được thiết lập theo các mốc thời gian. Cụ thể, cứ sau các mốc thời gian, số lượng đá sẽ được tăng lên, người chơi phải di chuyển nhiều hơn.
 
-3. ~~Lập trình viên đã giấu một đoạn code có chức năng tự sinh đá rơi trúng vào vị trí nhân vật sau một khoảng thời gian ngắn => gây khó khăn cho những người chơi phong cách núp hoặc sử dụng "nhân phẩm"....~~
+3. Lập trình viên đã giấu một đoạn code có chức năng tự sinh đá rơi trúng vào vị trí nhân vật sau một khoảng thời gian ngắn => gây khó khăn cho những người chơi phong cách núp hoặc sử dụng "nhân phẩm"....
 
    
 
@@ -198,7 +218,11 @@ Youtube: [TINY FOO: Lối chơi và một số chức năng của game!!](https:
     * BACK
     * Hiện số điểm người chơi đạt được
 
-* **<u>Âm thanh: Sử dụng nhạc nền và soud effect khác nhau, thay đổi theo từng SCREEN của Game</u>**
+* **<u>Âm thanh: Sử dụng nhạc nền và soud effect khác nhau, thay đổi theo từng SCREEN của Game (3 Screen).</u>**
+
+* **<u>Hiển thị phần điểm số ở màn hình Game Over.</u>**
+
+* <u>**Nếu điểm số cao hơn phần kỉ lục, thì điểm số ở phần kỉ lục sẽ được thay đổi.**</u>
 
 
 
@@ -215,6 +239,8 @@ Youtube: [TINY FOO: Lối chơi và một số chức năng của game!!](https:
 * //Comment
 
 * Khai báo, sử dụng, và giải phóng các biến con trỏ
+
+* Dùng Vector kiểu con trỏ class: `static vector<ROCK*> list_rock;`
 
 * Sử dụng biến tham chiếu reference không phát sinh bộ nhớ
 
@@ -254,6 +280,8 @@ Youtube: [TINY FOO: Lối chơi và một số chức năng của game!!](https:
 
 * Update một vài tính năng khả thi trong kho tài liệu của LazyFoo
 
+* Thêm hiệu ứng đồ hoạ hấp dẫn hơn
+
 ### Những điều tâm đắc:
 
 * Trước khi thực hiện bài tập, những kĩ năng em đã có như lập trình cơ bản, đọc hiểu tiếng anh, sử dụng công cụ tìm kiếm google, photoshop, chuyển đổi âm nhạc, github,... có cơ hội tiếp tục mài giũa và phát triển.
@@ -287,6 +315,8 @@ Em xin gửi lời cảm ơn chân thành và sâu sắc nhất tới các thầ
 * Cộng đồng [StackOverFlow](https://stackoverflow.com/)
 
 ***Tài nguyên:***
+
+* [https://wiki.libsdl.org](https://wiki.libsdl.org/)
 
 * https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art
 
