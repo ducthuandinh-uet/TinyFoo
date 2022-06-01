@@ -62,7 +62,7 @@
 
 2. Mặc dù vị trí và tốc độ đá được chọn random nhưng các cấp độ game được thiết lập theo các mốc thời gian. Cụ thể, cứ sau các mốc thời gian, số lượng đá sẽ được tăng lên, người chơi phải di chuyển nhiều hơn.
 
-3. Lập trình viên đã giấu một đoạn code có chức năng tự sinh đá rơi trúng vào vị trí nhân vật sau một khoảng thời gian ngắn => gây khó khăn cho những người chơi phong cách núp hoặc sử dụng "nhân phẩm"....
+3. >  Lập trình viên đã giấu một đoạn code có chức năng tự sinh đá rơi trúng vào vị trí nhân vật sau một khoảng thời gian ngắn => gây khó khăn cho những người chơi phong cách núp hoặc sử dụng "nhân phẩm"....
 
    
 
